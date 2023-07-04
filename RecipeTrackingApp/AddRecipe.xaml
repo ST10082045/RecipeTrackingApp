@@ -1,0 +1,61 @@
+﻿<Page x:Class="RecipeTrackingApp.AddRecipe"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:RecipeTrackingApp"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="400"
+      Title="AddRecipe">
+    <Border Background="#255abc">
+        <Grid>
+            <Canvas>
+                <Button Name="btnHome" Content="Home"  Background="Yellow" FontWeight="Bold" Height= "30" Width="50" Canvas.Left="20" Canvas.Top="10" Click="BtnHomeClick"/>
+                <Image Source="{StaticResource AppLogo}" Width="50" Height="30" Canvas.Left="80" Canvas.Top="10"></Image>
+
+                <TextBlock Text="Name:" FontSize="14" FontWeight="Bold" Canvas.Left="20" Canvas.Top="50"/>
+                <TextBox Name="txtName" Height="23" Width="125" Canvas.Left="70" Canvas.Top="50"/>
+
+                <TextBlock Text="Number of Ingredients:" FontSize="14" FontWeight="Bold" Canvas.Left="20" Canvas.Top="80"/>
+                <TextBox Name="txtNumIngredients" Height="23" Width="40" Canvas.Left="184" Canvas.Top="80"/>
+                <Button Name="btnIngContinue" Content="Continue" Background="Yellow" FontWeight="Bold" FontSize="13" Height= "26" Width="100" Canvas.Left="270" Canvas.Top="78" Click="BtnIngContinueClick"/>
+
+                <TextBlock Text="Enter the Details of Ingredient: " FontSize="14" FontWeight="Bold" Canvas.Left="20" Canvas.Top="110"/>
+                <TextBlock Name="txtIngNumb" Text="1" FontSize="14" FontWeight="Bold" Canvas.Left="230" Canvas.Top="110"/>
+                
+                <TextBlock Text="Name:" FontSize="12" FontWeight="Bold" Canvas.Left="20" Canvas.Top="140"/>
+                <TextBox Name="txtIngName" Height="23" Width="100" Canvas.Left="20" Canvas.Top="160"/>
+                
+                <TextBlock Text="Quantity:" FontSize="12" FontWeight="Bold" Canvas.Left="140" Canvas.Top="140"/>
+                <TextBox Name="txtIngQuantity" Height="23" Width="80" Canvas.Left="140" Canvas.Top="160"/>
+
+                <TextBlock Text="Measurement:" FontSize="12" FontWeight="Bold" Canvas.Left="240" Canvas.Top="140"/>
+                <TextBox Name="txtIngMeasurement" Height="23" Width="90" Canvas.Left="240" Canvas.Top="160"/>
+
+                <TextBlock Text="Calories:" FontSize="12" FontWeight="Bold" Canvas.Left="20" Canvas.Top="190"/>
+                <TextBox Name="txtIngCalories" Height="23" Width="80" Canvas.Left="20" Canvas.Top="210"/>
+
+                <TextBlock Text="Food Group:" FontSize="12" FontWeight="Bold" Canvas.Left="140" Canvas.Top="190"/>
+                <TextBox Name="txtIngFoodGrp" Height="23" Width="80" Canvas.Left="140" Canvas.Top="210"/>
+                <Button Name="btnEnterIng" Content="Enter" Background="Yellow" FontWeight="Bold" FontSize="13" Height= "26" Width="100" Canvas.Left="270" Canvas.Top="208" Click="BtnEnterIngClick"/>
+               
+                <TextBlock Name="txtErrorIng"  Text="Success Messsage Ingredients" FontSize="12" FontWeight="Bold" Canvas.Left="20" Canvas.Top="236"/>
+
+                <TextBlock Text="Number of Steps:" FontSize="14" FontWeight="Bold" Canvas.Left="20" Canvas.Top="260"/>
+                <TextBox Name="txtNumSteps" Height="23" Width="40" Canvas.Left="154" Canvas.Top="260"/>
+                <Button Name="btnStepsContinue" Content="Continue" Background="Yellow" FontWeight="Bold" FontSize="13" Height= "26" Width="100" Canvas.Left="210" Canvas.Top="258" Click="BtnStepsContinueClick"/>
+
+                <TextBlock Text="Enter Step" FontSize="14" FontWeight="Bold" Canvas.Left="20" Canvas.Top="290"/>
+                <TextBlock Name="txtStepsTnumber" Text="1" FontSize="14" FontWeight="Bold" Canvas.Left="100" Canvas.Top="290"/>
+                <TextBox Name="txtStep" Height="23" Width="240" Canvas.Left="20" Canvas.Top="312"/>
+                <Button Name="btnEnterSteps" Content="Enter" Background="Yellow" FontWeight="Bold" FontSize="13" Height= "26" Width="100" Canvas.Left="270" Canvas.Top="310" Click="BtnEnterStepsClick"/>
+
+                <TextBlock Name="txtErrorSteps" Text="Success Messsage Steps" FontSize="12" FontWeight="Bold" Canvas.Left="20" Canvas.Top="340"/>
+
+                <Button Name="btnAddRecipe" Content="Add Recipe"  Background="Yellow" FontWeight="Bold" Height= "40" Width="100" Canvas.Left="150" Canvas.Top="370" Click="BtnAddRecipeClick"/>
+                <TextBlock Text="Successfully added! View?" FontSize="11" FontStyle="Italic" FontWeight="Bold" TextDecorations="Underline" Canvas.Left="20" Canvas.Top="420"/>
+                <TextBlock Text="Clear and Add New Recipe?" FontSize="11" FontStyle="Italic" FontWeight="Bold" TextDecorations="Underline" Canvas.Right="20" Canvas.Top="420"/>
+            </Canvas>
+        </Grid>
+    </Border>
+</Page>

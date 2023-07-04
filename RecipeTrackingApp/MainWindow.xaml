@@ -1,0 +1,22 @@
+﻿<Window x:Class="RecipeTrackingApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RecipeTrackingApp"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="400">
+    <Border Background="#255abc">
+        <Grid>
+            <Canvas>
+                <Image Source="{StaticResource AppLogo}" Width="300" Height="300" Canvas.Left="50" Canvas.Bottom="190"></Image>
+                <Image Source="{StaticResource iconRecipe}" Width="160" Height="200" Canvas.Left="40" Canvas.Bottom="80"></Image>
+                <Image Source="{StaticResource RecipeBook}" Width="160" Height="200" Canvas.Left="200" Canvas.Bottom="80"></Image>
+                <Button Content="Add A Recipe"  Background="Yellow" FontWeight="Bold" Height= "50" Width="100" Canvas.Left="68" Canvas.Bottom="20" Click="BtnClickAddRecipe"/>
+                <Button Content="View All Recipes" Background="Yellow" FontWeight="Bold" Height= "50" Width="100" Canvas.Left="230" Canvas.Bottom="20" Click="BtnClickDisplayRecipes"/>
+
+            </Canvas>
+            <Frame x:Name="_mainFrame" />
+        </Grid>
+    </Border>
+</Window>

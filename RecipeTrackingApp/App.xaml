@@ -1,0 +1,13 @@
+﻿<Application x:Class="RecipeTrackingApp.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:RecipeTrackingApp"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <ResourceDictionary>
+            <BitmapImage x:Key="iconRecipe" UriSource="assets\iconRecipe.png"></BitmapImage>
+            <BitmapImage x:Key="RecipeBook" UriSource="assets\RecipeBook.png"></BitmapImage>
+            <BitmapImage x:Key="AppLogo" UriSource="assets\AppLogo.png"></BitmapImage>
+        </ResourceDictionary>  
+    </Application.Resources>
+</Application>
